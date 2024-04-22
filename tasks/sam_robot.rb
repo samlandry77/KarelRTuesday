@@ -4,6 +4,7 @@
 
 require_relative "../karel/ur_robot"
 # A class whose robots know how to sweep a short staircase of beepers
-class Q1Robot < UrRobot
- 
+class SamRobot < UrRobot
+
+
 end

@@ -10,8 +10,17 @@ require_relative "../karel/robota"
 # a task for a stair sweeper
 def task()
   
-  karel = Q3Robot.new(2, 2, Robota::EAST, 25)
- karel.place_beepers
+  karel = Q3Robot.new(2, 2, Robota::NORTH, 25)
+ 	karel.place_beepers
+ 	karel.uturnright
+ 	karel.place_beepers
+ 	karel.uturnleft
+ 	karel.place_beepers
+ 	karel.uturnright
+ 	karel.place_beepers
+ 	karel.uturnleft
+ 	karel.place_beepers
+ 	karel.uturnright
 end
 
 if __FILE__ == $0
