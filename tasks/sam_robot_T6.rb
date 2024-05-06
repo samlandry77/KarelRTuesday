@@ -5,7 +5,7 @@
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 # A class whose robots know how to sweep a short staircase of beepers
-class SamRobot < UrRobot
+class SamRobotT6 < UrRobot
 include Turner
 
 def place_beeper
@@ -72,8 +72,8 @@ def ramasse1
 	turn_left
 	move
 	pick_beeper
-	
 end
+
 def ramasse2
 	pick_beeper
 	move

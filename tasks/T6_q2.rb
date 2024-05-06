@@ -4,11 +4,11 @@
 
 $graphical = true
 
-require_relative "sam_robot"
+require_relative "sam_robot_T6"
 require_relative "../karel/robota"
-def task()
+def task
 
-  karel = SamRobot.new(1, 6, Robota::NORTH, 0)
+  karel = SamRobotT6.new(1, 6, Robota::NORTH, 0)
   world = Robota::World
   world.read_world("../karel/samt6")
   karel.move
