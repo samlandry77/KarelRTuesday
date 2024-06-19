@@ -1,10 +1,8 @@
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
-
-include Hello
-
-class ecrivainH < UrRobot
-
+class ecrivains < UrRobot
+include Turner
+ def intialise(street, avenue, direction, beepers)
 def ecrireH
 	ligne5
 	turn_around
